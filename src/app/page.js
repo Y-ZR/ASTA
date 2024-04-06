@@ -5,6 +5,10 @@ import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/componen
 import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineEmergency } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 
 
 
@@ -173,13 +177,16 @@ export default function Home() {
               <h2 className="font-bold text-md mb-2">FOLLOW US</h2>
               <div className="flex items-center space-x-4 mt-2">
                 <a href="#" aria-label="Facebook" className="text-white hover:text-gray-400">
-                  {/* Placeholder for Facebook Icon */}
-                </a>
-                <a href="#" aria-label="Twitter" className="text-white hover:text-gray-400">
-                  {/* Placeholder for Twitter Icon */}
+                  <FaFacebookSquare />
                 </a>
                 <a href="#" aria-label="Instagram" className="text-white hover:text-gray-400">
-                  {/* Placeholder for Instagram Icon */}
+                  <FaInstagram />
+                </a>
+                <a href="#" aria-label="Twitter" className="text-white hover:text-gray-400">
+                  <FaXTwitter />
+                </a>
+                <a href="#" aria-label="email" className="text-white hover:text-gray-400">
+                  <MdMailOutline />
                 </a>
               </div>
             </div>

@@ -5,42 +5,11 @@ import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/componen
 import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineEmergency } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
-
 
 
 export default function Home() {
   return (
     <div key="1" className="flex flex-col min-h-[100dvh]">
-      <header className="bg-black">
-        <div className="container px-4 lg:px-6 py-4">
-          <div className="flex items-center justify-between text-white">
-            <Link className="flex items-center space-x-2" href="#">
-              <SunIcon className="h-6 w-6" />
-              <span className="font-bold tracking-wide">ASTA</span>
-            </Link>
-
-            <nav className="hidden lg:flex lg:gap-4 lg:ml-auto">
-              <Link className="text-sm font-medium" href="#">
-                English
-              </Link>
-              <Link className="text-sm font-light" href="#">
-                Español
-              </Link>
-              <Link className="text-sm font-light" href="#">
-                Français
-              </Link>
-              <Link className="text-sm font-light" href="#">
-                汉语
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
-      
       <div className="flex-1">
         <div className="flex flex-col items-center justify-center py-12 text-center md:py-24">
           <div className="space-y-3">
@@ -154,48 +123,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <footer className="bg-black text-white">
-        <div className="container mx-auto px-4 lg:px-6 pt-6 pb-3">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <h2 className="font-bold text-md mb-2">ABOUT US</h2>
-              <p className="text-sm">Learn more about our mission, vision, and values.</p>
-              <Link href="#" className="text-sm inline-block mt-2 underline">Read More</Link>
-            </div>
-            <div>
-              <h2 className="font-bold text-md mb-2">TERMS OF USE</h2>
-              <p className="text-sm">Review the terms and conditions for using our platform.</p>
-              <Link href="#" className="text-sm inline-block mt-2 underline">View Terms</Link>
-            </div>
-            <div>
-              <h2 className="font-bold text-md mb-2">CONTACT</h2>
-              <p className="text-sm">Get in touch with us for any questions or support.</p>
-              <Link href="#" className="text-sm inline-block mt-2 underline">Contact Us</Link>
-            </div>
-            <div>
-              <h2 className="font-bold text-md mb-2">FOLLOW US</h2>
-              <div className="flex items-center space-x-4 mt-2">
-                <a href="#" aria-label="Facebook" className="text-white hover:text-gray-400">
-                  <FaFacebookSquare />
-                </a>
-                <a href="#" aria-label="Instagram" className="text-white hover:text-gray-400">
-                  <FaInstagram />
-                </a>
-                <a href="#" aria-label="Twitter" className="text-white hover:text-gray-400">
-                  <FaXTwitter />
-                </a>
-                <a href="#" aria-label="email" className="text-white hover:text-gray-400">
-                  <MdMailOutline />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-6 text-center text-sm">
-            <p>© 2024 ASTA. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
@@ -258,34 +185,6 @@ function HomeIcon(props) {
     >
       <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
       <polyline points="9 22 9 12 15 12 15 22" />
-    </svg>
-  )
-}
-
-
-function SunIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m6.34 17.66-1.41 1.41" />
-      <path d="m19.07 4.93-1.41 1.41" />
     </svg>
   )
 }

@@ -61,7 +61,7 @@ export default function Home() {
                 <p>Find local food banks, free meal programs, and resources to help you access the nutrition you need.</p>
               </CardContent>
               <CardFooter className="p-4">
-                <Link className="w-full inline-block text-sm underline" href="#">
+                <Link className="w-full inline-block text-sm underline" href="/food">
                   View Resources
                 </Link>
               </CardFooter>

@@ -103,7 +103,7 @@ export default function Home() {
                 <p>Find employment services, job training, and career resources to help you find work.</p>
               </CardContent>
               <CardFooter className="p-4">
-                <Link className="w-full inline-block text-sm underline" href="#">
+                <Link className="w-full inline-block text-sm underline" href="job">
                   View Resources
                 </Link>
               </CardFooter>

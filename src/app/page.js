@@ -89,7 +89,7 @@ export default function Home() {
                 <p>Connect with healthcare services, prescription assistance, and medical care.</p>
               </CardContent>
               <CardFooter className="p-4">
-                <Link className="w-full inline-block text-sm underline" href="#">
+                <Link className="w-full inline-block text-sm underline" href="medical">
                   View Resources
                 </Link>
               </CardFooter>

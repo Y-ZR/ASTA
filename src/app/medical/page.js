@@ -6,7 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 
 
-function HomeIcon(props) {
+function ClubIcon(props) {
   return (
     <svg
       {...props}
@@ -20,25 +20,25 @@ function HomeIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      <polyline points="9 22 9 12 15 12 15 22" />
+      <path d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z" />
+      <path d="M12 17.66L12 22" />
     </svg>
   )
 }
 
 
-export default function House() {
+export default function Medical() {
   return (
     <div className="flex flex-col min-h-screen mb-12">
       <header className="py-10 mt-8 mb-4">
         <div className="container px-4 text-center">
           <div className="inline-block mb-1">
-            <HomeIcon className="mx-auto text-current h-14 w-14" />
+            <ClubIcon className="mx-auto text-current h-14 w-14" />
           </div>
           <div className="space-y-3">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Housing Support Nearby</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"> Medical Aid Nearby</h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Find local housing support resources in your community.
+              Find local medical resources in your community.
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function House() {
               <Card>
                 <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold flex items-center">Harbor Home Foundation</h3>
+                    <h3 className="text-xl font-bold flex items-center">HealPoint Medical Center</h3>
                     <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>123 Main St, Springfield, IL 62701</p>
                     <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (217) 555-1234</p>
                     <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Mondays 12:00 p.m. to 2:30 p.m.</p>
@@ -82,7 +82,7 @@ export default function House() {
               <Card>
                 <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold flex items-center">SafeHaven Housing Services</h3>
+                    <h3 className="text-xl font-bold flex items-center">WellSpring Health Services</h3>
                     <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>200 Elm St, Anytown, MA 02100</p>
                     <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (508) 555-9876</p>
                     <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Tuesdays 10:00 a.m. to 12:00 p.m.</p>
@@ -95,7 +95,7 @@ export default function House() {
               <Card>
                 <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold flex items-center">Sanctuary Support Services</h3>
+                    <h3 className="text-xl font-bold flex items-center">RestoreHealth Urgent Care</h3>
                     <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>800 Oak Ave, Pleasantville, CA 90001</p>
                     <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (310) 555-2468</p>
                     <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Wednesdays 9:00 a.m. to 1:00 p.m.</p>
@@ -107,7 +107,7 @@ export default function House() {
               <Card>
                 <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold flex items-center">Refuge Residences</h3>
+                    <h3 className="text-xl font-bold flex items-center">CompassCare Medical Facilities</h3>
                     <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>500 Maple St, Rivertown, NY 10010</p>
                     <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (212) 555-3698</p>
                     <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Thursdays 11:00 a.m. to 3:00 p.m.</p>

@@ -31,7 +31,7 @@ function UtensilsIcon(props) {
 export default function Food() {
   return (
     <div className="flex flex-col min-h-screen mb-12">
-      <header className="py-10 mt-8 mb-2">
+      <header className="py-10 mt-8 mb-4">
         <div className="container px-4 text-center">
           <div className="inline-block mb-1">
             <UtensilsIcon className="mx-auto text-current h-14 w-14" />

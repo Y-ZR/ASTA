@@ -75,7 +75,7 @@ export default function Home() {
                 <p>Access shelters, rental assistance, and housing programs in your area.</p>
               </CardContent>
               <CardFooter className="p-4">
-                <Link className="w-full inline-block text-sm underline" href="#">
+                <Link className="w-full inline-block text-sm underline" href="house">
                   View Resources
                 </Link>
               </CardFooter>

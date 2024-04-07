@@ -6,11 +6,36 @@ import { IoLocationSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 
 
+function UtensilsIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+      <path d="M7 2v20" />
+      <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+    </svg>
+  );
+}
+
+
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen mb-12">
-      <header className="py-10 mt-10">
+      <header className="py-10 mt-8">
         <div className="container px-4 text-center">
+          <div className="inline-block">
+            <UtensilsIcon className="mx-auto text-current h-14 w-14" />
+          </div>
           <div className="space-y-3">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Food Assistance Nearby</h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

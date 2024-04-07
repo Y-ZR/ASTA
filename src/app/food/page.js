@@ -1,12 +1,14 @@
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { CardContent, Card } from "@/components/ui/card"
-import { FiSearch } from 'react-icons/fi'; 
+import { FiSearch } from 'react-icons/fi';
+import { FaRegClock } from 'react-icons/fa';
+import { IoLocationSharp } from "react-icons/io5";
+import { IoCall } from "react-icons/io5";
+
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen mb-12">
       <header className="py-10 mt-10">
         <div className="container px-4 text-center">
           <div className="space-y-3">
@@ -42,33 +44,49 @@ export default function Component() {
           <ul className="grid gap-4">
             <li>
               <Card>
-                <CardContent className="p-4 md:p-6">
+              <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Community Kitchen</h3>
-                    <p className="text-sm text-gray-500">123 Main St, Springfield, IL 62701</p>
-                    <p className="text-sm text-gray-500">Contact: (217) 555-1234</p>
+                    <h3 className="text-xl font-bold flex items-center">Community Kitchen</h3>
+                    <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>123 Main St, Springfield, IL 62701</p>
+                    <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (217) 555-1234</p>
+                    <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Mondays 12:00 p.m. to 2:30 p.m.</p>
                   </div>
                 </CardContent>
               </Card>
             </li>
             <li>
               <Card>
-                <CardContent className="p-4 md:p-6">
+                <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Food Pantry</h3>
-                    <p className="text-sm text-gray-500">200 Elm St, Anytown, MA 02100</p>
-                    <p className="text-sm text-gray-500">Contact: (508) 555-9876</p>
+                    <h3 className="text-xl font-bold flex items-center">Food Pantry</h3>
+                    <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>200 Elm St, Anytown, MA 02100</p>
+                    <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (508) 555-9876</p>
+                    <p className="text-sm text-gray-500 flex items-center">Opening Hours: Tuesdays 10:00 a.m. to 12:00 p.m.</p>
+                  </div>
+                  
+                </CardContent>
+              </Card>
+            </li>
+            <li>
+              <Card>
+                <CardContent className="p-4 md:p-6 flex">
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold flex items-center">Hope Center</h3>
+                    <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>800 Oak Ave, Pleasantville, CA 90001</p>
+                    <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (310) 555-2468</p>
+                    <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Wednesdays 9:00 a.m. to 1:00 p.m.</p>
                   </div>
                 </CardContent>
               </Card>
             </li>
             <li>
               <Card>
-                <CardContent className="p-4 md:p-6">
+                <CardContent className="p-4 md:p-6 flex">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold">Hope Center</h3>
-                    <p className="text-sm text-gray-500">800 Oak Ave, Pleasantville, CA 90001</p>
-                    <p className="text-sm text-gray-500">Contact: (310) 555-2468</p>
+                    <h3 className="text-xl font-bold flex items-center">Community Food Bank</h3>
+                    <p className="text-sm text-gray-500 flex items-center"><IoLocationSharp className="mr-2 w-4 h-4"/>500 Maple St, Rivertown, NY 10010</p>
+                    <p className="text-sm text-gray-500 flex items-center"><IoCall className="mr-2"/>Contact: (212) 555-3698</p>
+                    <p className="text-sm text-gray-500 flex items-center"><FaRegClock className="mr-2"/>Opening Hours: Thursdays 11:00 a.m. to 3:00 p.m.</p>
                   </div>
                 </CardContent>
               </Card>

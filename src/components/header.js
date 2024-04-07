@@ -5,7 +5,7 @@ export default function Header() {
     <header className="bg-black">
       <div className="container px-4 lg:px-6 py-4">
         <div className="flex items-center justify-between text-white">
-          <Link className="flex items-center space-x-2" href="#">
+          <Link className="flex items-center space-x-2" href="/">
             <SunIcon className="h-6 w-6" />
             <span className="font-bold tracking-wide">ASTA</span>
           </Link>

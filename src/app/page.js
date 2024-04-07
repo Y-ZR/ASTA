@@ -10,6 +10,19 @@ import { VscFeedback } from "react-icons/vsc";
 export default function Home() {
   return (
     <div key="1" className="flex flex-col min-h-[100dvh]">
+      <div className="relative w-full h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/hero.jpg')` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+          <h2 className="text-4xl font-bold sm:text-5xl md:text-6xl">Welcome to ASTA</h2>
+          <p className="text-md sm:text-lg md:text-xl mt-4 max-w-xl mx-auto">
+            Connecting you with the resources and support you need to make a difference.
+          </p>
+          <Button className="mt-8 inline-block text-white font-semibold py-2 px-4 rounded-lg">
+            Explore Resources
+          </Button>
+        </div>
+      </div>
+
       <div className="flex-1">
         <div className="flex flex-col items-center justify-center py-12 text-center md:py-24">
           <div className="space-y-3">

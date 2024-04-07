@@ -120,7 +120,7 @@ export default function Home() {
                 <p>Connect to professionals for emergency services, crisis intervention, and immediate support.</p>
               </CardContent>
               <CardFooter className="p-4">
-                <Link className="w-full inline-block text-sm underline" href="#">
+                <Link className="w-full inline-block text-sm underline" href="emergency">
                   View Terms & Conditions
                 </Link>
               </CardFooter>

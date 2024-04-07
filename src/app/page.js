@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -8,6 +10,12 @@ import { VscFeedback } from "react-icons/vsc";
 
 
 export default function Home() {
+  const scrollToSection = () => {
+    const section = document.getElementById("help-section");
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+
   return (
     <div key="1" className="flex flex-col min-h-[100dvh]">
       <div className="relative w-full h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/hero.jpg')` }}>
@@ -17,13 +25,13 @@ export default function Home() {
           <p className="text-md sm:text-lg md:text-xl mt-4 max-w-xl mx-auto">
             Connecting you with the resources and support you need to make a difference.
           </p>
-          <Button className="mt-8 inline-block text-white font-semibold py-2 px-4 rounded-lg">
+          <Button onClick={scrollToSection} className="mt-8 inline-block text-white font-semibold py-2 px-4 rounded-lg">
             Explore Resources
           </Button>
         </div>
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1" id="help-section">
         <div className="flex flex-col items-center justify-center py-12 text-center md:py-24">
           <div className="space-y-3">
             <div className="space-y-2">

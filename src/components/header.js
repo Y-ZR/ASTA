@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container px-4 lg:px-6 py-4">
         <div className="flex items-center justify-between text-white">
           <Link className="flex items-center space-x-2" href="/">
-            <Image src="/asta.png" alt="ASTA Logo" width={50} height={50} />
+            <Image unoptimized src="/asta.png" alt="ASTA Logo" width={50} height={50} />
           </Link>
 
           <nav className="hidden lg:flex lg:gap-4 lg:ml-auto">
